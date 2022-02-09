@@ -1,15 +1,14 @@
-<!-- in pp/views/layouts/application.html.erb -->
 <!DOCTYPE html>                                                                      
 <html> 
   <head>
-    <title>TestApp</title>
+    <title>Template</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= vite_stylesheet_tag 'application.css', media: 'all' %>
     <%= vite_client_tag %>
-    <%= vite_javascript_tag 'index.jsx' %>
+    <%= vite_javascript_tag 'application.jsx' %>
 
   </head>
 
