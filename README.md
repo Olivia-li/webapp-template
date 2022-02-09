@@ -1,24 +1,19 @@
-# README
+# Setup your template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
+This template uses `ruby 3` and `node 17`
 
-Things you may want to cover:
+## Install dependencies
+1) `bundle install`
+2) `yarn`
 
-* Ruby version
+## Setup your database
+Create a new postgresql database. 
+```
+CREATE ROLE app WITH LOGIN SUPERUSER PASSWORD 'password';
+CREATE DATABASE <APPNAME>_development WITH OWNER = 'app';
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Run your server
+1) `rails s`
+2) `yarn dev`
