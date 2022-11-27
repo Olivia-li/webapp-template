@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'homepage/index'
-  root 'homepage#index'
+  root "application#index"
+  get '/*slug', to: 'application#index'
 end
